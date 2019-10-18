@@ -2,13 +2,27 @@
   .flexed(space-around, center);
   flex-direction: column;
   margin-top: 50%;
+
+  @media @desktop {
+    margin-top: 25vh;
+  }
+
   .header {
     text-align: center;
     .margined();
+    display: none;
+
+    @media @desktop {
+      display: inline;
+    }
   }
 
   .landing {
     text-align: center;
+
+    @media @desktop {
+      margin-top: -1%;
+    }
 
     .signup {
       .buttoned(@buttontxt, @buttonbg);
@@ -20,6 +34,34 @@
       padding-top: 2vh;
       padding-bottom: 2vh;
       .margined();
+      font-weight: bold;
+      transition: all 500ms ease-in-out;
+
+      @media @desktop {
+        padding-left: 5vw;
+        padding-right: 5vw;
+      }
+
+      &:hover {
+        .buttoned(@buttonbg, @buttontxt);
+      }
     }
-  }
-}
+  } // landing
+
+  .featured {
+    h3 {
+      text-align: center;
+    }
+    .grid {
+      .flexed(space-between, center);
+
+      img {
+        max-width: 75px;
+        padding-right: 1%;
+        padding-left: 1%;
+        margin-top: 10%;
+        margin-bottom: 15%;
+      }
+    } // grid
+  } // featured
+} // middle
