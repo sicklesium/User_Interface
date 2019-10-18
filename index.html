@@ -11,6 +11,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script>
+function hamburger(x) {
+  x.classList.toggle("change");
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -20,15 +35,24 @@
 
   <div class="container">
 
-  <nav class="navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="#">Sign Up</a>
-    <a href="#">Sign In</a>
-    <a href="#">Contact Us</a>
-  </nav>
+    <nav class="navigation">
+      <div class="active"></div>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Sign In</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div onclick="hamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
+    </nav>
 
-  <header class="main-header">Welcome to Art App!</header>
+  <header class="main-header"><h2>Welcome to Art App!</h2></header>
 
   <section class="landing">
     <p>Want to share your art and build a professional portfolio that you can show off to the world?</p>
