@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Raleway', sans-serif;
   color: #000;
+  background-color: #FFD500;
 }
 h1,
 h2,
@@ -208,6 +209,33 @@ p {
 }
 .navigation .active {
   background-color: #FFD500;
-  color: white;
+  color: #FFF;
   height: 49px;
+}
+.navigation .active h3 {
+  padding-top: 3%;
+  padding-left: 3%;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #00649E;
+}
+.footer .footer-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  width: 70%;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #00649E;
+}
+.footer a:hover {
+  color: #000;
 }

@@ -1,0 +1,23 @@
+.footer {
+  .flexed(space-around, center);
+  color: @footerlinks;
+
+  .footer-wrapper {
+    position: fixed;
+    bottom: 2rem;
+    width: 70%;
+  }
+
+  .footer-container {
+    .flexed(space-around, center);
+  }
+
+  a {
+    text-decoration: none;
+    color: @footerlinks;
+
+    &:hover {
+      color: @black;
+    }
+  }
+} // footer
