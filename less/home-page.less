@@ -1,0 +1,25 @@
+.middle {
+  .flexed(space-around, center);
+  flex-direction: column;
+  margin-top: 50%;
+  .header {
+    text-align: center;
+    .margined();
+  }
+
+  .landing {
+    text-align: center;
+
+    .signup {
+      .buttoned(@buttontxt, @buttonbg);
+      border: none;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.6rem;
+      padding-left: 10vw;
+      padding-right: 10vw;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      .margined();
+    }
+  }
+}

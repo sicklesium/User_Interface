@@ -239,3 +239,31 @@ p {
 .footer a:hover {
   color: #000;
 }
+.middle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50%;
+}
+.middle .header {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.middle .landing {
+  text-align: center;
+}
+.middle .landing .signup {
+  color: #FFF;
+  background: #00649E;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
