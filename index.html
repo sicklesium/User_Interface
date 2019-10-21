@@ -8,6 +8,7 @@
 
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -43,6 +44,12 @@ function myFunction() {
         <a href="#">Sign Up</a>
         <a href="#">Sign In</a>
         <a href="#">Contact Us</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <div onclick="hamburger(this)">
@@ -55,21 +62,22 @@ function myFunction() {
 
   <div class="middle">
     <header class="header"><h2>Welcome to Art App!</h2></header>
+    <div class="middle2">
+      <section class="featured">
+        <h3>Featured Artists</h3>
+        <div class="grid">
+          <img src="https://picsum.photos/200">
+          <img src="https://picsum.photos/300">
+          <img src="https://picsum.photos/400">
+          <img src="https://picsum.photos/500">
+        </div>
+      </section>
 
-    <section class="featured">
-      <h3>Featured Artists</h3>
-      <div class="grid">
-        <img src="https://via.placeholder.com/200">
-        <img src="https://via.placeholder.com/200">
-        <img src="https://via.placeholder.com/200">
-        <img src="https://via.placeholder.com/200">
-      </div>
-    </section>
-
-    <section class="landing">
-      <p><em>Want to create a professional portfolio, build community and sell your work? Art App is a professional networking site where you can showcase your portfolio, network, and sell your art.</em></p>
-      <button class="signup">Sign Up</button>
-    </section>
+      <section class="landing">
+        <p><em>Want to create a professional portfolio, build community and sell your work? Art App is a professional networking site where you can showcase your portfolio, network, and sell your art.</em></p>
+        <button class="signup">Sign Up</button>
+      </section>
+    </div>
   </div>
 
     <footer class="footer">

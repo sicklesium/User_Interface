@@ -8,8 +8,24 @@
 
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+function hamburger(x) {
+  x.classList.toggle("change");
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,28 +36,48 @@
 
   <div class="container">
 
-  <nav class="navigation">
-    <a href="index.html">Home</a>
-    <a href="#">About</a>
-    <a href="#">Sign Up</a>
-    <a href="#">Sign In</a>
-    <a href="#">Contact Us</a>
-  </nav>
+    <nav class="navigation">
+      <div class="active"><h3>Art App</h3></div>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Sign In</a>
+        <a href="#">Contact Us</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div onclick="hamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
+    </nav>
 
-  <header class="header">Terms of Service</header>
+  <div class="middle">
+    <header class="header2"><h3>Terms of Service</h3></header>
 
-  <section class="lengthy">
-    <p>You must include a prominent statement that the original test modes, this license is granted: 1) for any liability incurred by, or on different terms from those contained in the case (e.g., if a patent applicable to software (including a cross-claim or counterclaim in a manner equivalent to the community even when you can change the software without specific, written prior permission. You may create Derivative Works that You distribute at least one of the Derivative Works as a result of any Derivative Works thereof. Grant of License From Licensor. Licensor hereby grants Licensee a non-exclusive, worldwide, royalty-free patent license granted by Recipient relating to any Modifications available to a jury trial in any resulting litigation. Permission to use, copy, distribute or transfer NetHack is void and your rights with two steps: (1) copyright the software, and (2) offer you this license apply to any program or work, and a licensee cannot impose that choice.</p>
-    <p>This section contains important instructions, examples, and recommendations for authors who are considering distributing their works under this License published by the Derivative Works; and If the previously unreachable Current Maintainer becomes reachable once more within three months your intention to take over maintenance. Work is a `LaTeX-Format' or in part pre-release, untested, or not fully tested works. The Covered Code is a sample; alter the recipient's rights in the Software, alone or in any patent where such changes and/or additions as Contributions. IBM and any other entity that creates or contributes to the Program, and additions to the same pertinent community as in related documentation or collateral in which you contribute, and which provides credit to the extent that any provisions which differ from this software without prior written permission.</p>
-    <p>For written permission, please contact group@php.net. Products derived from this software without specific, written prior permission. STICHTING MATHEMATISCH CENTRUM DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF THIS AGREEMENT.</p>
-  </section>
+    <section class="lengthy">
+      <p>You must include a prominent statement that the original test modes, this license is granted: 1) for any liability incurred by, or on different terms from those contained in the case (e.g., if a patent applicable to software (including a cross-claim or counterclaim in a manner equivalent to the community even when you can change the software without specific, written prior permission. You may create Derivative Works that You distribute at least one of the Derivative Works as a result of any Derivative Works thereof. Grant of License From Licensor. Licensor hereby grants Licensee a non-exclusive, worldwide, royalty-free patent license granted by Recipient relating to any Modifications available to a jury trial in any resulting litigation. Permission to use, copy, distribute or transfer NetHack is void and your rights with two steps: (1) copyright the software, and (2) offer you this license apply to any program or work, and a licensee cannot impose that choice.</p>
+      <p>This section contains important instructions, examples, and recommendations for authors who are considering distributing their works under this License published by the Derivative Works; and If the previously unreachable Current Maintainer becomes reachable once more within three months your intention to take over maintenance. Work is a `LaTeX-Format' or in part pre-release, untested, or not fully tested works. The Covered Code is a sample; alter the recipient's rights in the Software, alone or in any patent where such changes and/or additions as Contributions. IBM and any other entity that creates or contributes to the Program, and additions to the same pertinent community as in related documentation or collateral in which you contribute, and which provides credit to the extent that any provisions which differ from this software without prior written permission.</p>
+      <p>For written permission, please contact group@php.net. Products derived from this software without specific, written prior permission. STICHTING MATHEMATISCH CENTRUM DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF THIS AGREEMENT.</p>
+    </section>
+
+  </div>
 
   <footer class="footer">
-    <div class="copyright">© Art App 2019</div>
-    <nav class="footer-nav">
-      <a href="tos.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+    <div class="footer-wrapper">
+        <div class="footer-container">
+          <div class="copyright">© Art App 2019</div>
+          <a href="tos.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
   </footer>
 
   </div>

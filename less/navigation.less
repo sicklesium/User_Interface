@@ -2,7 +2,7 @@
 
 .navigation {
   overflow: hidden;
-  background-color: @lightestyellow;
+  background-color: transparent;
   position: relative;
 
   .bar1, .bar2, .bar3 {
@@ -55,21 +55,25 @@
     }
 
     &.icon {
-      background: @lightestyellow;
+      background: transparent;
       display: block;
       position: absolute;
       right: 0;
       top: 0;
+
+      @media @desktop {
+        display:none;
+      }
     }
 
     &:hover {
-      background-color: @yellow2;
-      color: @blue3;
+      background-color: @lightestred;
+      color: @white;
     }
   } // Links
 
   .active {
-    background-color: @lightestyellow;
+    background-color: transparent;
     color: @white;
     height: 49px;
 
@@ -82,4 +86,29 @@
       display: none;
     }
   }
-} // navigation
+  .search-container {
+    float: right;
+
+        button {
+          float: right;
+          padding: 6px 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background: #ddd;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background: #ccc;
+        }
+
+    input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+  }
+}  // navigation

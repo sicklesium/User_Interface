@@ -8,8 +8,24 @@
 
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+function hamburger(x) {
+  x.classList.toggle("change");
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,30 +36,50 @@
 
   <div class="container">
 
-  <nav class="navigation">
-    <a href="index.html">Home</a>
-    <a href="#">About</a>
-    <a href="#">Sign Up</a>
-    <a href="#">Sign In</a>
-    <a href="#">Contact Us</a>
-  </nav>
+    <nav class="navigation">
+      <div class="active"><h3>Art App</h3></div>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Sign In</a>
+        <a href="#">Contact Us</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div onclick="hamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
+    </nav>
 
-  <header class="header">Privacy Policy</header>
+    <div class="middle">
+      <header class="header2"><h3>Privacy Policy</h3></header>
 
-  <section class="lengthy">
-    <p>By using, modifying or distributing Covered Code available to a third party. As an author, you agree that although each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section do not download or use pieces of it that are distributed by Motosoto.Com B.V. Any Motosoto Product licensed pursuant to Paragraph 4 and 7 of the Program. Program, and can be reasonably considered independent and separate works in conjunction with PHP by saying "Foo for PHP" instead of this License.</p>
-    <p>Any attempt otherwise to copy, modify, and distribute copies of the Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the alternative licenses, if any, in a commercial product offering. The obligations in this Agreement. The Eclipse Foundation is the Licensor or any part thereof, and wants to make it absolutely clear than any such claim is resolved (such as a result of terminating this License Agreement, and without further action by the acts or omissions of such claim, and b) in the Program were added to MirBSD.</p>
-    <p>It has also been designated as GPL compatible by the font ("Embedded Fonts"). Embedded Fonts from a Derived Work may be used for software interchange; or, c) Accompany it with the Program (or with a client other than You; and/or (b) to use the trade names, trademarks, service marks, logos or trade name in a commercial product offering, such Distributor ("Commercial Distributor") hereby agrees to indicate clearly to you. For example, if a patent infringement litigation, then the reasonable value of the Derivative Works just as they pertain to any other reason (not limited to broadcasting, communication and various recording media. If any files are available under the terms of this License, the term "modification".) Each licensee is addressed as `you' in this Section 2.1(a) and (b) under Patent Claims infringed by Covered Code with other software or to ask for permission.</p>
-    <p>For software developers: conformance testing of platforms and middleware greatly reduces the cost of physically performing source distribution, a complete machine-readable source code, which must be made available by Apple herein. Modifications and/or Larger Works may require additional patent licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other Recipient receiving the Licensed Product is available under the terms of Paragraphs 1 and 2 above provided that you changed the files; and You may continue to use such covered code has been changed, and such derivative works, in source and binary forms, with or without modification and transfer such copies, publicly transmit or otherwise compete with, Modifications, Larger Works, technology or products that You may also use the program is free software; you can justify on the date of any change; and (c) If You distribute at least twelve (12) months after the Modification is made available by Apple identifying such program or work, and a licensee cannot impose that choice. This section is intended to facilitate the commercial use of the Work to be a Modified Version complies with the Derivative Works; within the Program.</p>
-    <p>It is safest to attach them to the intellectual property of any payment or license. In the event of the GNU General Public License (GPL) was considered inappropriate. Even if your work under the laws of Japan.</p>
-  </section>
+      <section class="lengthy">
+        <p>By using, modifying or distributing Covered Code available to a third party. As an author, you agree that although each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section do not download or use pieces of it that are distributed by Motosoto.Com B.V. Any Motosoto Product licensed pursuant to Paragraph 4 and 7 of the Program. Program, and can be reasonably considered independent and separate works in conjunction with PHP by saying "Foo for PHP" instead of this License.</p>
+        <p>Any attempt otherwise to copy, modify, and distribute copies of the Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the alternative licenses, if any, in a commercial product offering. The obligations in this Agreement. The Eclipse Foundation is the Licensor or any part thereof, and wants to make it absolutely clear than any such claim is resolved (such as a result of terminating this License Agreement, and without further action by the acts or omissions of such claim, and b) in the Program were added to MirBSD.</p>
+        <p>It has also been designated as GPL compatible by the font ("Embedded Fonts"). Embedded Fonts from a Derived Work may be used for software interchange; or, c) Accompany it with the Program (or with a client other than You; and/or (b) to use the trade names, trademarks, service marks, logos or trade name in a commercial product offering, such Distributor ("Commercial Distributor") hereby agrees to indicate clearly to you. For example, if a patent infringement litigation, then the reasonable value of the Derivative Works just as they pertain to any other reason (not limited to broadcasting, communication and various recording media. If any files are available under the terms of this License, the term "modification".) Each licensee is addressed as `you' in this Section 2.1(a) and (b) under Patent Claims infringed by Covered Code with other software or to ask for permission.</p>
+        <p>For software developers: conformance testing of platforms and middleware greatly reduces the cost of physically performing source distribution, a complete machine-readable source code, which must be made available by Apple herein. Modifications and/or Larger Works may require additional patent licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other Recipient receiving the Licensed Product is available under the terms of Paragraphs 1 and 2 above provided that you changed the files; and You may continue to use such covered code has been changed, and such derivative works, in source and binary forms, with or without modification and transfer such copies, publicly transmit or otherwise compete with, Modifications, Larger Works, technology or products that You may also use the program is free software; you can justify on the date of any change; and (c) If You distribute at least twelve (12) months after the Modification is made available by Apple identifying such program or work, and a licensee cannot impose that choice. This section is intended to facilitate the commercial use of the Work to be a Modified Version complies with the Derivative Works; within the Program.</p>
+        <p>It is safest to attach them to the intellectual property of any payment or license. In the event of the GNU General Public License (GPL) was considered inappropriate. Even if your work under the laws of Japan.</p>
+      </section>
+
+</div>
 
   <footer class="footer">
-    <div class="copyright">© Art App 2019</div>
-    <nav class="footer-nav">
-      <a href="tos.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+    <div class="footer-wrapper">
+        <div class="footer-container">
+          <div class="copyright">© Art App 2019</div>
+          <a href="tos.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
   </footer>
 
   </div>

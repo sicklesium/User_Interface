@@ -4,7 +4,7 @@
   margin-top: 50%;
 
   @media @desktop {
-    margin-top: 25vh;
+    margin-top: 10vh;
   }
 
   .header {
@@ -17,51 +17,105 @@
     }
   }
 
-  .landing {
+  .header2{
     text-align: center;
+    margin-bottom: 5%;
+    margin-top: -30%;
 
     @media @desktop {
-      margin-top: -1%;
+      margin-top: 0;
+    }
+  }
+
+  .middle2 {
+    @media @desktop {
+        .flexed(space-between, center);
     }
 
-    .signup {
-      .buttoned(@buttontxt, @buttonbg);
-      border: none;
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.6rem;
-      padding-left: 10vw;
-      padding-right: 10vw;
-      padding-top: 2vh;
-      padding-bottom: 2vh;
-      .margined();
-      font-weight: bold;
-      transition: all 500ms ease-in-out;
+    .landing {
+      text-align: center;
 
       @media @desktop {
-        padding-left: 5vw;
-        padding-right: 5vw;
+        margin-top: -1%;
       }
 
-      &:hover {
-        .buttoned(@buttonbg, @buttontxt);
+      p {
+        @media @desktop {
+          width: 50%;
+          margin-left: 25%;
+        }
+      }
+
+      .signup {
+        .buttoned(@buttontxt, @buttonbg);
+        border: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.6rem;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        .margined();
+        font-weight: bold;
+        transition: all 500ms ease-in-out;
+        margin-bottom: 50%;
+
+        @media @desktop {
+          padding-left: 5vw;
+          padding-right: 5vw;
+          margin-bottom: 0%;
+        }
+
+        &:hover {
+          .buttoned(@buttonbg, @buttontxt);
+        }
+      }
+    } // landing
+
+    .featured {
+      h3 {
+        text-align: center;
+      }
+      .grid {
+        .flexed(space-between, center);
+        text-align: center;
+
+        @media @desktop {
+          width: 205px;
+          .flexed(space-between, center);
+          flex-wrap: wrap;
+        }
+
+        img {
+          max-width: 75px;
+          padding-right: 1%;
+          padding-left: 1%;
+          margin-top: 10%;
+          margin-bottom: 15%;
+
+          @media @desktop {
+            max-width: 100px;
+            margin-bottom: 1%;
+          }
+        }
+      } // grid
+    } // featured
+  } // middle2
+
+  p {
+    @media @desktop {
+      margin-top: 5%;
+    }
+  }
+
+  .lengthy {
+    margin-bottom: 10%;
+    p {
+      margin-bottom: 10%;
+
+      @media @desktop {
+        margin-bottom: 5%;
       }
     }
-  } // landing
-
-  .featured {
-    h3 {
-      text-align: center;
-    }
-    .grid {
-      .flexed(space-between, center);
-
-      img {
-        max-width: 75px;
-        padding-right: 1%;
-        padding-left: 1%;
-        margin-top: 10%;
-        margin-bottom: 15%;
-      }
-    } // grid
-  } // featured
+  }
 } // middle
