@@ -136,7 +136,7 @@ html,
 body {
   font-family: 'Raleway', sans-serif;
   color: #000;
-  background: linear-gradient(rgba(255, 213, 0, 0.7), rgba(255, 213, 0, 0.7)), url(https://images.pexels.com/photos/1575841/pexels-photo-1575841.jpeg);
+  background: linear-gradient(rgba(255, 213, 0, 0.7), rgba(255, 213, 0, 0.7)), url(..//img/background.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -410,15 +410,18 @@ em {
   }
 }
 .middle .middle2 .featured .grid img {
-  max-width: 75px;
+  width: 75px;
+  height: 75px;
   padding-right: 1%;
   padding-left: 1%;
   margin-top: 1%;
   margin-bottom: 15%;
+  object-fit: cover;
 }
 @media (min-width: 1000px) {
   .middle .middle2 .featured .grid img {
-    max-width: 153px;
+    width: 153px;
+    height: 153px;
     margin-bottom: 1%;
   }
 }
