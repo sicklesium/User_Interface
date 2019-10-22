@@ -17,7 +17,7 @@ function hamburger(x) {
   x.classList.toggle("change");
 }
 
-function myFunction() {
+function dropDown() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -25,6 +25,7 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
 </script>
 
   <!--[if lt IE 9]>
@@ -51,7 +52,7 @@ function myFunction() {
           </form>
         </div>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="dropDown()">
         <div onclick="hamburger(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
