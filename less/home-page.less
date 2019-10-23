@@ -122,4 +122,39 @@
       }
     }
   }
+
+  .about {
+    .flexed(space-between, space-between);
+    flex-direction: column;
+    margin-bottom: 10%;
+    width: 75%;
+
+    @media @desktop {
+      width: 50%;
+    }
+
+    .about-left {
+      .flexed(space-between, flex-start);
+      flex-direction: column;
+      margin-bottom: 10%;
+
+      img {
+        width: 150px;
+        height: 150px;
+        .margined();
+      }
+    }
+
+    .about-right {
+      .flexed(space-between, flex-end);
+      flex-direction: column;
+      margin-bottom: 10%;
+
+      img {
+        width: 150px;
+        height: 150px;
+        .margined();
+      }
+    }
+  } // about
 } // middle
