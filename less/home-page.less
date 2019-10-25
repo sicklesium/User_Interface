@@ -145,10 +145,15 @@
       flex-direction: column;
       margin-bottom: 10%;
 
+      @media @desktop {
+        width: 100%;
+      }
+
       img {
         width: 150px;
         height: 150px;
         .margined();
+        border-radius: 90px;
       }
     }
 
@@ -158,10 +163,16 @@
       margin-bottom: 10%;
       text-align: right;
 
+
+      @media @desktop {
+        width: 100%;
+      }
+
       img {
         width: 150px;
         height: 150px;
         .margined();
+        border-radius: 90px;
       }
     }
   } // about
