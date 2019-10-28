@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Art App</title>
+
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+function hamburger(x) {
+  x.classList.toggle("change");
+}
+
+function dropDown() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav class="navigation">
+      <div class="active"><h3>Art App</h3></div>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://zealous-noyce-c158b9.netlify.com/register">Sign Up</a>
+        <a href="https://zealous-noyce-c158b9.netlify.com/login">Sign In</a>
+        <a href="#">Contact Us</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+        <div onclick="hamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
+    </nav>
+
+
+  <div class="middle">
+    <header class="header"><h2>Welcome to Art App!</h2></header>
+    <div class="middle2">
+      <section class="featured">
+        <h3>Featured Artists</h3>
+        <div class="grid">
+          <img src="/img/artist1.jpg">
+          <img src="/img/artist2.jpg">
+          <img src="/img/artist3.jpg">
+          <img src="/img/artist4.jpg">
+        </div>
+      </section>
+
+      <section class="landing">
+        <p><em>Want to create a professional portfolio, build community and sell your work? Art App is a professional networking site where you can showcase your portfolio, network, and sell your art.</em></p>
+        <button class="signup" onclick="window.location.href = 'https://zealous-noyce-c158b9.netlify.com/register';">Sign Up</button>
+      </section>
+    </div>
+  </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="copyright">© Art App 2019</div>
+            <a href="tos.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+    </footer>
+  </div>
+
+  </div>
+
+</body>
+
+</html>

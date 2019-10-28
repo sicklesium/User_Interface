@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Art App - About Us</title>
+
+  <link href="css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+function hamburger(x) {
+  x.classList.toggle("change");
+}
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav class="navigation">
+      <div class="active"><h3>Art App</h3></div>
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="https://zealous-noyce-c158b9.netlify.com/register">Sign Up</a>
+        <a href="https://zealous-noyce-c158b9.netlify.com/login">Sign In</a>
+        <a href="#">Contact Us</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div onclick="hamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </a>
+    </nav>
+
+    <div class="middle">
+
+      <header class="header2"><h3>About Art App</h3></header>
+
+      <section class="about">
+        <div class="about-left">
+          <img src="/img/isla.png">
+          <h4>Isla McNeil</h4>
+          <p>Project Lead.</p>
+        </div>
+        <div class="about-right">
+          <img src="/img/simon.png">
+          <h4>Simon Nolla</h4>
+          <p>UI Developer.</p>
+        </div>
+        <div class="about-left">
+          <img src="/img/gustavo.png">
+          <h4>Gustavo Yepez</h4>
+          <p>UI Developer.</p>
+        </div>
+        <div class="about-right">
+          <img src="/img/toni.png">
+          <h4>Toni Darden</h4>
+          <p>React I.</p>
+        </div>
+        <div class="about-left">
+          <img src="/img/allie.png">
+          <h4>Allie Robinson</h4>
+          <p>React I.</p>
+        </div>
+        <div class="about-right">
+          <img src="/img/cody.png">
+          <h4>Cody Caro</h4>
+          <p>React II.</p>
+        </div>
+        <div class="about-left">
+          <img src="/img/brittney.png">
+          <h4>Brittney Thomas</h4>
+          <p>React II.</p>
+        </div>
+        <div class="about-right">
+          <img src="/img/darrin.png">
+          <h4>Darrin Maier</h4>
+          <p>UX Designer.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+          <div class="footer-container">
+            <div class="copyright">© Art App 2019</div>
+            <a href="tos.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
